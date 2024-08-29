@@ -1,25 +1,28 @@
 {
-    "name": "redis-express-queue-project",
+    "name": "queuing_system_in_js",
     "version": "1.0.0",
-    "description": "A basic Express app interacting with Redis and Kue queue system",
-    "main": "src/server.js",
+    "description": "A project to demonstrate Redis usage with Node.js and ES6",
+    "main": "index.js",
     "scripts": {
-      "start": "node src/server.js",
-      "dev": "nodemon src/server.js"
+      "dev": "nodemon --exec babel-node --presets @babel/preset-env",
+      "start": "node 0-redis_client.js"
     },
     "dependencies": {
-      "express": "^4.17.1",
-      "redis": "^3.0.2",
-      "kue": "^0.11.6"
+      "redis": "^4.0.0"  
     },
     "devDependencies": {
-      "nodemon": "^2.0.7",
-      "@babel/cli": "^7.13.0",
-      "@babel/core": "^7.13.1",
-      "@babel/node": "^7.13.0",
-      "@babel/preset-env": "^7.13.0"
+      "@babel/core": "^7.21.0",
+      "@babel/cli": "^7.21.0",
+      "@babel/preset-env": "^7.21.0",
+      "babel-node": "^6.15.0",
+      "nodemon": "^2.0.20"
     },
-    "author": "",
+    "babel": {
+      "presets": [
+        "@babel/preset-env"
+      ]
+    },
+    "author": "Your Name",
     "license": "ISC"
   }
   
